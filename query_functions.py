@@ -173,7 +173,7 @@ def query_handling_using_LLM_updated(query, model = model , gemini_model = gemin
 
     user_query = extract_features_with_llm(query)
 
-    top_results = find_assessments(user_query, k=10)
+    top_results = find_assessments(user_query, k=50)
 
     top_json = json.dumps(top_results, indent=2, default=convert_numpy)
 
